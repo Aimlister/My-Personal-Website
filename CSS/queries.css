@@ -51,7 +51,7 @@
         margin-top: -13rem;
     }
 }
-@media(max-width: 61.25rem){ /* BELOW 980px*/
+@media(max-width: 61.25em){ /* BELOW 980px*/
     .home-heading{
         font-size: 4rem;
     }
@@ -146,6 +146,17 @@
     }
     
 }
-@media(max-width: 41rem){ /* BELOW 656px */
-
+@media(max-width: 26.2em){ /* BELOW 419px */
+    .section1-btn{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .resume-btn{
+        text-align: center;
+        align-self: center;
+    }
+    .learn-more-btn{
+        text-align: center;
+        align-self: center;
+    }
 }

@@ -77,7 +77,7 @@
     }
     .img-box1{
         display: grid;
-        grid-template-columns: 32fr 40fr 30fr;
+        grid-template-columns: 32fr 40fr 32fr;
         margin-top: 2.4rem;
         padding: 2.4rem;
         /* column-gap: 2.4rem; */

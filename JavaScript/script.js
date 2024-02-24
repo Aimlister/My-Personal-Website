@@ -1,28 +1,30 @@
+import { variables } from './vendor.js'
 
-//back to top button functionality
-function backToTop() {
+const backToTop = () => {
     window.scrollTo(0, 0);
 }
-//Resume button functionality
-document.querySelector('.resume-btn').addEventListener('click', function() {
-    document.querySelector('.resume').classList.remove('hidden');
-    document.querySelector('.overlay').classList.remove('hidden');
-})
-document.querySelector('.resume-close-btn').addEventListener('click', function() {
-    document.querySelector('.resume').classList.add('hidden');
-    document.querySelector('.overlay').classList.add('hidden');
-})
-document.addEventListener('keydown', function (e) {
-    if(e.key ==='Escape' && !(document.querySelector('.resume').classList.contains('hidden'))){
-        document.querySelector('.resume').classList.add('hidden');
-        document.querySelector('.overlay').classList.add('hidden');
+
+const viewResume = () => {
+    variables.resumeElement.classList.toggle('hidden');
+    variables.backdropOverlay.classList.toggle('hidden');    
+}
+
+const closeViewResume = (element) => {
+    if(element.key ==='Escape' && !(variables.resumeElement.classList.contains('hidden'))){
+            viewResume();
     }
-})
+}
+
+const mobileNavigator = () => {
+    variables.homeHeaderElement.classList.toggle("nav-open");
+}
+
+variables.backToTopButtonElement.addEventListener('click', backToTop);
+
+//Resume button functionality
+variables.viewMyResumeButtonElement.addEventListener('click', viewResume);
+variables.resumeCloseButtonElement.addEventListener('click', viewResume);
+document.addEventListener('keydown', closeViewResume);
 
 //mobile navigation button functionality
-const btnEl = document.querySelector(".btn-mobile-nav");
-const headerEl = document.querySelector(".header-header");
-
-btnEl.addEventListener("click", function(){
-    headerEl.classList.toggle("nav-open");
-});
+variables.mobileNavButtonElement.addEventListener("click", mobileNavigator);

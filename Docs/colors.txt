@@ -1,0 +1,16 @@
+background-color: #fff3bf;
+home heading color: #333126;
+back-to-top/learn-more-btn/social-icon hover background-color: #e6dbac;
+back-to-top color: #4c4939;
+header-nav-links:hover, header-nav-links:active background-color: #e6dbac
+header-nav-links:active/learn-more-btn background-color: #ccc299;
+icon mobile nav/resume-btn color/learn-more-btn: #333;
+resume-btn background-color: #66614c;  color: #fff;
+resume-btn box-shadow #333126;
+resume-btn background-color: #4c4939;
+learn-more-btn:active: #807a60;
+section1-icon color: #444;
+box-shadow images: #333126;
+resume box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+overlay background-color: rgba(0, 0, 0, 0.6);
+.soham-resume:hover color: #000 background-color: #ccc
